@@ -1,0 +1,296 @@
+import React from 'react';
+import './App.css';
+/* import { useTranslation } from 'react-i18next';
+import i18next from 'i18next'; */
+
+
+
+import Home from './pages';
+
+import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
+
+//* RUTAS DEL FOOTER - SECCIÓN ABOUT US */
+
+import Founders from './pages/aboutUs/founders';
+
+
+//* RUTAS DEL FOOTER - SECCIÓN OUR MISSION */
+
+import OurMission from './pages/ourMission/ourMission';
+
+import OurResearch from './pages/ourResearch/ourResearch';
+
+/* import OurMissionInfo from './pages/ourMission/ourMissionInfo'; */
+
+//* RUTAS DEL FOOTER - SECCIÓN OUR MISSION */
+
+/* import OurResearchInfo from './pages/ourResearch/ourResearchInfo'; */
+
+//* RUTAS DEL FOOTER - SECCIÓN About us */
+
+import Executives from './pages/aboutUs/executives';
+import Development from './pages/aboutUs/development';
+import TechnicalSupport from './pages/aboutUs/technicalSupport';
+
+//* RUTAS DEL FOOTER - SECCIÓN Resources */
+
+import DesignInfo from './pages/resources/designInfo';
+import EducationInfo from './pages/resources/educationInfo';
+import GeneralOperationInfo from './pages/resources/generalOperationInfo';
+import ProjectManagmentInfo from './pages/resources/projectmanagementInfo';
+import BusinessAnalisisInfo from './pages/resources/businessAnalisisInfo';
+
+//* RUTAS DEL FOOTER - SECCIÓN BLOG */
+
+import Blog from './pages/blog/blog';
+import ForumInfo from './pages/blog/forumInfo';
+import SocialChannels from './pages/blog/socialChannels';
+
+//* RUTAS DEL FOOTER - Features */
+
+import Roadmap from './pages/features/roadmap';
+import Purpose from './pages/features/purpose';
+import Technology from './pages/features/technology';
+import Content from './pages/features/content';
+
+//* RUTAS DEL FOOTER - SECCIÓN API*/
+
+import OverviewInfo from './pages/api/overviewInfo';
+import Methods from './pages/api/docs/methods';
+import Quality from './pages/api/docs/quality';
+import BusinessDevelopment from './pages/api/docs/business_development';
+import Security from './pages/api/docs/security';
+import SeeAllServices from './pages/api/docs/see_all_services';
+import Services from './pages/api/docs/services';
+import Reliability from './pages/api/docs/reliability';
+import TermsAndConditionsInfo from './pages/api/termsAndConditionsInfo';
+import CookiePolicy from './pages/api/cookiePolicy';
+import CodeOfConductInfo from './pages/api/codeOfConductInfo';
+import CustomerCareInfo from './pages/api/customerCareInfo';
+import StatusInfo from './pages/api/statusInfo';
+import Faqs from './pages/api/faqs';
+import PrivacyPolicy from './pages/api/privacyPolicy';
+
+//* RUTAS DEL FOOTER - Blog*/
+
+import IndexInfo from './pages/blog/indexInfo';
+import ResearchAndDevelopmentInfo from './pages/blog/researchAndDevelopmentInfo';
+import Community from './pages/blog/community';
+import MilestoneInfo from './pages/blog/MilestoneInfo';
+import NewsLetterAndEvents from './pages/blog/newsLetterAndEventsInfo';
+import Publications from './pages/blog/publications';
+
+//* RUTAS DEL FOOTER - SECCIÓN PARTNERS */
+
+import AbrahamicFoundation from './pages/partners/abrahamicFoundation';
+import ArtengStudio from './pages/partners/artengstudio';
+
+//Lab
+
+import FinanceAndInvestment from './pages/lab/financeAndInvestment';
+
+//responsability
+
+import Zero from './pages/responsability/zero';
+import Crdata from './pages/responsability/crdata';
+import Stories from './pages/responsability/stories';
+
+//careers
+
+import Careers from './pages/careers/careers';
+
+import Administration from './pages/careers/administration';
+
+import Ecommerce from './pages/careers/ecommerce';
+
+import Marketing from './pages/careers/marketing';
+
+import CustomerService from './pages/careers/customer_service';
+
+import Finance from './pages/careers/finance';
+
+import Merchandising from './pages/careers/merchandising';
+
+import Sales from './pages/careers/sales';
+
+import Designcarrer from './pages/careers/designcarrer';
+
+import InformationTecnology from './pages/careers/informationtecnology';
+
+import Sourcing from './pages/careers/sourcing';
+
+import Others from './pages/careers/others';
+
+//Ecossystem
+
+import Welcome from './pages/ecosystem/welcome';
+
+function App() {
+
+ 
+
+/*   const { t } = useTranslation();
+
+  function handleClick(lang) {
+    i18next.changeLanguage(lang)
+  } */
+
+
+
+  return (
+    <>
+      
+      {/* <div className="App">
+  <nav style={{ width: '100%', padding: '2rem 0', backgroundColor:'gray' }}>
+    <button onClick={()=>handleClick('en')} >
+      English
+    </button>
+    <button onClick={()=>handleClick('ko')} >
+      Korean
+    </button>
+    <button onClick={()=>handleClick('chi')} >
+      Chinese
+   </button>
+  </nav>
+
+    <p>
+      <h3>{t('Thanks.1')}</h3>  <h3>{t('Why.1')}</h3> 
+    </p>
+ 
+</div> */}
+      
+      <Router>
+  <Routes>
+    <Route path="/" element={<Home />}  />
+          <Route path="/founders" element={<Founders />} />
+          <Route path="/executives" element={<Executives />} />
+          <Route path="/technicalsupport" element={<TechnicalSupport />} />
+          <Route path="/development" element={<Development />} />
+          <Route path="/ourmission" element={<OurMission />} />
+          <Route path="/ourresearch" element={<OurResearch />} />
+          <Route path="/resourcesdesign" element={<DesignInfo />} />
+          <Route path="/resourceseducation" element={<EducationInfo />} />
+          <Route path="/resorcesgeneral" element={<GeneralOperationInfo />} />
+          <Route path="/resourcesprojectm" element={<ProjectManagmentInfo />} />
+          <Route path="/resourcesbusiness" element={<BusinessAnalisisInfo />} />
+          <Route path="/apioverview" element={<OverviewInfo />} />
+          <Route path="/termsandconditions" element={<TermsAndConditionsInfo />} />
+          <Route path="/cookiepolicy" element={<CookiePolicy />} />
+          <Route path="/blog" element={<Blog />} />
+          <Route path="/forum" element={<ForumInfo />} />
+          <Route path="/socialchannels" element={<SocialChannels />} />
+
+
+          {/* Features */}
+
+          <Route path="/roadmap" element={<Roadmap />} />
+          <Route path="/purpose" element={<Purpose />} />
+          <Route path="/technology" element={<Technology />} />
+          <Route path="/content" element={<Content />} />
+
+          {/* RUTAS DEL FOOTER - SECCIÓN API */}
+
+          <Route path="/methods" element={<Methods />} />
+          <Route path="/quality" element={<Quality />} />
+          <Route path="/businessdevelopment" element={<BusinessDevelopment />} />
+          <Route path="/security" element={<Security />} />
+          <Route path="/seeallservices" element={<SeeAllServices />} />
+          <Route path="/services" element={<Services />} />
+          <Route path="/reliability" element={<Reliability />} />
+          <Route path="/codeofconduct" element={<CodeOfConductInfo />} />
+          <Route path="/customercare" element={<CustomerCareInfo />} />
+          <Route path="/status" element={<StatusInfo />} />
+          <Route path="/faqs" element={<Faqs />} />
+          <Route path="/privacypolicy" element={<PrivacyPolicy />} />
+          
+          
+
+          {/* RUTAS DEL FOOTER - SECCIÓN BLOG */}
+
+          <Route path="/indexinfo" element={<IndexInfo />} />
+          <Route path="/researchanddevelopment" element={<ResearchAndDevelopmentInfo />} />
+          <Route path="/community" element={<Community />} />
+          <Route path="/milestone" element={<MilestoneInfo />} />
+          <Route path="/newsletterandevents" element={<NewsLetterAndEvents />} />
+          <Route path="/publications" element={<Publications />} />
+
+          {/* RUTAS DEL FOOTER - SECCIÓN PARTNERS */}
+
+          <Route path="/abrahamicfoundation" element={<AbrahamicFoundation />} />
+          <Route path="/artengstudio" element={<ArtengStudio />} />
+
+          {/* RUTAS DEL FOOTER - SECCIÓN LAB */}
+
+          <Route path="/financeandinvestment" element={<FinanceAndInvestment />} />
+
+          {/* RUTAS DEL FOOTER - SECCIÓN RESPONSABILITY */}
+
+          <Route path="/zero" element={<Zero />} />
+          <Route path="/crdata" element={<Crdata />} />
+          <Route path="/storiesinfo" element={<Stories />} />
+
+          {/* RUTAS DEL FOOTER - SECCIÓN CAREERS */}
+
+          <Route path="/careers" element={<Careers />} />
+
+          <Route path="/administration" element={<Administration />} />
+
+          <Route path="/ecommerce" element={<Ecommerce />} />
+
+          <Route path="/marketing" element={<Marketing />} />
+
+          <Route path="/customerservice" element={<CustomerService />} />
+
+          <Route path="/finance" element={<Finance />} />
+
+          <Route path="/merchandising" element={<Merchandising />} />
+
+          <Route path="/sales" element={<Sales />} />
+
+          <Route path="/design" element={<Designcarrer />} />
+
+          <Route path="/informationtecnology" element={<InformationTecnology />} />
+
+          <Route path="/sourcing" element={<Sourcing />} />
+
+          <Route path="/others" element={<Others />} />
+
+          {/* Ecosystem */}
+
+          <Route path="/welcome" element={<Welcome />} />
+
+  </Routes>
+</Router>
+
+    </>
+  );
+ /*  const { t } = useTranslation();
+
+  function handleClick(lang) {
+    i18next.changeLanguage(lang)
+  }
+
+  return (
+    <div className="App">
+        <nav style={{ width: '100%', padding: '2rem 0', backgroundColor:'gray' }}>
+          <button onClick={()=>handleClick('en')} >
+            English
+          </button>
+          <button onClick={()=>handleClick('ko')} >
+            Korean
+          </button>
+          <button onClick={()=>handleClick('chi')} >
+            Chinese
+         </button>
+        </nav>
+        <header className="App-header">
+          <img src={logo} className="App-logo" alt="logo" />
+          <p>
+            <h3>{t('Thanks.1')}</h3>  <h3>{t('Why.1')}</h3> 
+          </p>
+        </header>
+    </div>
+  ); */
+}
+
+export default App;
