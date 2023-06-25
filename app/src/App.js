@@ -38,7 +38,7 @@ import DesignInfo from './pages/resources/designInfo';
 import EducationInfo from './pages/resources/educationInfo';
 import GeneralOperationInfo from './pages/resources/generalOperationInfo';
 import ProjectManagmentInfo from './pages/resources/projectmanagementInfo';
-import BusinessAnalisisInfo from './pages/resources/businessAnalisisInfo';
+import BusinessAnalysisInfo from './pages/resources/businessAnalysisInfo';
 
 //* RUTAS DEL FOOTER - SECCIÓN BLOG */
 
@@ -89,6 +89,14 @@ import ArtengStudio from './pages/partners/artengstudio';
 
 import FinanceAndInvestment from './pages/lab/financeAndInvestment';
 
+import Governance from './pages/lab/governance';
+
+import FineArt from './pages/lab/fineArt';
+
+import ArtVentures from './pages/lab/artVentures';
+
+import NFTS from './pages/lab/nfts'; 
+
 //responsability
 
 import Zero from './pages/responsability/zero';
@@ -104,6 +112,8 @@ import Administration from './pages/careers/administration';
 import Ecommerce from './pages/careers/ecommerce';
 
 import Marketing from './pages/careers/marketing';
+
+import Management from './pages/careers/management';
 
 import CustomerService from './pages/careers/customer_service';
 
@@ -172,7 +182,7 @@ function App() {
           <Route path="/resourceseducation" element={<EducationInfo />} />
           <Route path="/resorcesgeneral" element={<GeneralOperationInfo />} />
           <Route path="/resourcesprojectm" element={<ProjectManagmentInfo />} />
-          <Route path="/resourcesbusiness" element={<BusinessAnalisisInfo />} />
+          <Route path="/resourcesbusiness" element={<BusinessAnalysisInfo />} />
           <Route path="/apioverview" element={<OverviewInfo />} />
           <Route path="/termsandconditions" element={<TermsAndConditionsInfo />} />
           <Route path="/cookiepolicy" element={<CookiePolicy />} />
@@ -222,6 +232,10 @@ function App() {
           {/* RUTAS DEL FOOTER - SECCIÓN LAB */}
 
           <Route path="/financeandinvestment" element={<FinanceAndInvestment />} />
+          <Route path="/governance" element={<Governance />} />
+          <Route path="/fineart" element={<FineArt />} />
+          <Route path="/artventures" element={<ArtVentures />} />
+          <Route path="/nfts" element={<NFTS />} />
 
           {/* RUTAS DEL FOOTER - SECCIÓN RESPONSABILITY */}
 
@@ -238,6 +252,8 @@ function App() {
           <Route path="/ecommerce" element={<Ecommerce />} />
 
           <Route path="/marketing" element={<Marketing />} />
+
+          <Route path="/management" element={<Management />} />
 
           <Route path="/customerservice" element={<CustomerService />} />
 

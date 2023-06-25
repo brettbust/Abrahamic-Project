@@ -2,10 +2,10 @@ import React from 'react';
 import { Link } from 'react-router-dom';
 import underconstruction from '../../images/underconstruction.jpg';
 
-function BusinessAnalisisInfo() {
+function BusinessAnalysisInfo() {
 return (
         <div style={{ backgroundColor: '#101522', height: '100vh', display: 'flex', flexDirection: 'column', justifyContent: 'center', alignItems: 'center' }}>
-        <h1 style={{ color: '#eed104' }}>Busines Analisis</h1>
+        <h1 style={{ color: '#eed104' }}>Business Analyis</h1>
         <img src={underconstruction} alt="Under Construction" width={550} height={350} />
                 <h2 style={{ color: '#eed104', margin: 20 }}>Work in progress, process it being developed, we will open soon.</h2>
 <Link  to="/">
@@ -27,4 +27,4 @@ cursor: 'pointer'
         
 }
 
-export default BusinessAnalisisInfo;
+export default BusinessAnalysisInfo;

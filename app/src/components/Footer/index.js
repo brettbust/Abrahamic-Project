@@ -76,7 +76,7 @@ const Footer = () => {
   <FooterLinkTitle>API</FooterLinkTitle>
        <FooterLink to="/apioverview">Overview</FooterLink>
        <FooterLink to="/"><Methods/></FooterLink>
-              <FooterLink to="/privacyPolicy">Privacy Policy</FooterLink>
+              <FooterLink to="/privacyPolicy" onClick={() => scrollToTopRef()}>Privacy Policy</FooterLink>
        <FooterLink to="/cookiepolicy" onClick={() => scrollToTopRef()}>Cookie Police</FooterLink>
        <FooterLink to="/status">Status</FooterLink>
        <FooterLink to="/faqs" onClick={() => scrollToTopRef()}>FAQ's</FooterLink>

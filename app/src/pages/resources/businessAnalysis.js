@@ -2,7 +2,7 @@ import React from 'react';
 
 //compomente founders
 
-const BusinessAnalisis = () => {
+const BusinessAnalysis = () => {
     return (
         <div>
             <h1>Designn</h1>
@@ -11,4 +11,4 @@ const BusinessAnalisis = () => {
 }
 
 
-export default BusinessAnalisis;
+export default BusinessAnalysis;

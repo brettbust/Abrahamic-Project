@@ -1,15 +1,15 @@
 import React from 'react';
 
-const Others = () => {
+const Management = () => {
     return (
         <div style={styles.container}>
-            <h1 style={{textAlign:'center'}}>Others</h1>
+            <h1 style={{textAlign:'center'}}>Management</h1>
         </div>
     )
 }
 
 
-export default Others;
+export default Management;
 
 const styles = {
     container: {

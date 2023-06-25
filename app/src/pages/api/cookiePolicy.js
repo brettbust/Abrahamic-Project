@@ -156,7 +156,7 @@ const styles = {
         backgroundColor: "#041f26",
     color: "white",
     /* padding: "10px 20px 0px 0px",  */
-        padding: "0px 400px 0px 0px",
+        padding: "50px 400px 40px 40px",
         boxShadow: "0px 0px 10px #282c34",
     minHeight: "100vh",
         //justificamos el contenido del texto

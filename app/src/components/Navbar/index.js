@@ -318,11 +318,12 @@ const mostrarVideoHandler = () => {
                     fontSize: '19px',
             }}
           >
-            <li><a style={{ color: '#fff' }} href="#">Lab Ecosystem Function</a></li>
-            <li><a style={{ color: '#fff' }} href="#">Gobernance</a></li>
-            <li><a style={{ color: '#fff' }} href="#">NFT'S</a></li>
-            <li><a style={{ color: '#fff' }} href="#">Tangible ART</a></li>
+            <li><a style={{ color: '#fff' }} href="artventures">Art Venture</a></li>
             <li><a style={{ color: '#fff' }} href="FinanceAndInvestment">Finance and Investment</a></li>
+            <li><a style={{ color: '#fff' }} href="fineart">Fine ART</a></li>
+            <li><a style={{ color: '#fff' }} href="governance">Governance</a></li>
+            <li><a style={{ color: '#fff' }} href="#">Lab Ecosystem Function</a></li>
+            <li><a style={{ color: '#fff' }} href="nfts">NFT'S</a></li>
           </ul>
         )}
             </NavItem>

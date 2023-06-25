@@ -190,7 +190,8 @@ const PrivacyPolicy = () => {
 <p>
   We keep this Policy under regular review. This Policy was last updated on May 14, 2023.
 </p>
-            </div>
+    
+</div>
             <Link to="/" onClick={() => scrollToTopRef.scrollIntoView({ behavior: 'smooth', block: 'start'})}  style={styles.button}>Return to Home</Link>
         </div>
     );
@@ -202,7 +203,7 @@ const styles = {
           backgroundColor: "#041f26",
       color: "white",
       /* padding: "10px 20px 0px 0px",  */
-          padding: "0px 400px 400px 40px",
+          padding: "50px 400px 40px 40px",
           boxShadow: "0px 0px 10px #282c34",
       minHeight: "100vh",
           //justificamos el contenido del texto
