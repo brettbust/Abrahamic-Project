@@ -76,7 +76,7 @@ import PrivacyPolicy from './pages/api/privacyPolicy';
 import IndexInfo from './pages/blog/indexInfo';
 import ResearchAndDevelopmentInfo from './pages/blog/researchAndDevelopmentInfo';
 import Community from './pages/blog/community';
-import MilestoneInfo from './pages/blog/MilestoneInfo';
+import Milestone from './pages/blog/milestone';
 import NewsLetterAndEvents from './pages/blog/newsLetterAndEventsInfo';
 import Publications from './pages/blog/publications';
 
@@ -96,6 +96,8 @@ import FineArt from './pages/lab/fineArt';
 import ArtVentures from './pages/lab/artVentures';
 
 import NFTS from './pages/lab/nfts'; 
+
+import AuctionHouse from './pages/lab/auctionHouse';
 
 //responsability
 
@@ -134,6 +136,7 @@ import Others from './pages/careers/others';
 //Ecossystem
 
 import Welcome from './pages/ecosystem/welcome';
+import Integration from './pages/ecosystem/integration';
 
 function App() {
 
@@ -220,7 +223,7 @@ function App() {
           <Route path="/indexinfo" element={<IndexInfo />} />
           <Route path="/researchanddevelopment" element={<ResearchAndDevelopmentInfo />} />
           <Route path="/community" element={<Community />} />
-          <Route path="/milestone" element={<MilestoneInfo />} />
+          <Route path="/milestone" element={<Milestone />} />
           <Route path="/newsletterandevents" element={<NewsLetterAndEvents />} />
           <Route path="/publications" element={<Publications />} />
 
@@ -236,6 +239,7 @@ function App() {
           <Route path="/fineart" element={<FineArt />} />
           <Route path="/artventures" element={<ArtVentures />} />
           <Route path="/nfts" element={<NFTS />} />
+          <Route path="/auctionhouse" element={<AuctionHouse />} />
 
           {/* RUTAS DEL FOOTER - SECCIÓN RESPONSABILITY */}
 
@@ -274,6 +278,7 @@ function App() {
           {/* Ecosystem */}
 
           <Route path="/welcome" element={<Welcome />} />
+          <Route path="/integration" element={<Integration />} />
 
   </Routes>
 </Router>

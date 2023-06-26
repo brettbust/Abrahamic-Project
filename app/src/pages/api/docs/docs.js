@@ -25,9 +25,6 @@ const Methods = () => {
                 <Link className="link" to="/security">Security</Link>
             </li>
             <li>
-                <Link className="link" to="/seeallservices">All Services</Link>
-            </li>
-            <li>
                 <Link className="link" to="/services">Services</Link>
             </li>
             <li>

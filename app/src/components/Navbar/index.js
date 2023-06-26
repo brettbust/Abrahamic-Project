@@ -287,7 +287,7 @@ const mostrarVideoHandler = () => {
             <li><a style={{ color: '#fff' }} href="welcome">Welcome</a></li>
             <li><a style={{ color: '#fff' }} href="#">Crypto Education</a></li>
             <li><a style={{ color: '#fff' }} href="#">Whitepaper</a></li>
-            <li><a style={{ color: '#fff' }} href="#">Integration</a></li>
+            <li><a style={{ color: '#fff' }} href="integration">Integration</a></li>
           </ul>
         )}
             </NavItem>
@@ -317,7 +317,8 @@ const mostrarVideoHandler = () => {
                     alignItems: 'flex-start',
                     fontSize: '19px',
             }}
-          >
+                >
+            <li><a style={{ color: '#fff' }} href="auctionhouse">Auction House</a></li>      
             <li><a style={{ color: '#fff' }} href="artventures">Art Venture</a></li>
             <li><a style={{ color: '#fff' }} href="FinanceAndInvestment">Finance and Investment</a></li>
             <li><a style={{ color: '#fff' }} href="fineart">Fine ART</a></li>
