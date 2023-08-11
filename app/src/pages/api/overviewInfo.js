@@ -4,13 +4,34 @@ import underconstruction from '../../images/underconstruction.jpg';
 
 function OverViewInfo() {
 return (
-        <div style={{ backgroundColor: '#101522', height: '100vh', display: 'flex', flexDirection: 'column', justifyContent: 'center', alignItems: 'center' }}>
-        <h1 style={{ color: '#eed104' }}>Overview</h1>
-        <img src={underconstruction} alt="Under Construction" width={550} height={350} />
-                <h2 style={{ color: '#eed104', margin: 20 }}>Work in progress, process it being developed, we will open soon.</h2>
+    <div style={{ backgroundColor: 'Black', height: '100vh', display: 'flex', flexDirection: 'column', justifyContent: 'center', alignItems: 'center' }}>
+
+        
+        <h1><span style={{
+            color: '#4880b3',
+            fontSize: '100px',
+            fontFamily: 'sans-serif',
+        }}>Work in progr</span><span style={{
+            color: 'white',
+                fontSize: '100px',
+                fontFamily: 'sans-serif',
+            }}>ess</span></h1>
+        
+        <h1><span style={{
+            color: '#4880b3',
+            fontSize: '50px',
+            fontFamily: 'sans-serif',
+        }}>0%                                            </span><span style={{
+            color: 'white',
+                fontSize: '50px',
+                fontFamily: 'sans-serif',
+            }}>100%</span></h1>
+
+     
+           
 <Link  to="/">
 <button style={{
-backgroundColor: '#eed104',
+backgroundColor: 'white',
 color: '#262625',
 padding: '10px 20px',
 borderRadius: '5px',

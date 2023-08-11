@@ -3,10 +3,10 @@ import { Link } from "react-router-dom";
 import { useState } from "react";
 import { useRef } from "react";
 
+
 import MilestoneImage from "../../images/milestone_img.png";
 
 const Milestone = () => {
-
 
     const [showOptions, setShowOptions] = useState(false);
 

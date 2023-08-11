@@ -58,7 +58,7 @@ const HeroSection = () => {
   <HeroContent>
       <HeroH1 style={{position: 'relative', top: '150px'}}>{t('Main.1')}</HeroH1>
       <HeroP style={{position: 'relative', top: '150px'}}>
-        We provide a set of technological solutions with the aim of making your company or business grow..
+      {t('Main2.1')}
       </HeroP>
       <div style={{position: 'relative', left: '702px', bottom: '71px'}}>
         <img 

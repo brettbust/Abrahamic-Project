@@ -77,7 +77,7 @@ const Footer = () => {
        <FooterLink to="/apioverview">Overview</FooterLink>
        <FooterLink to="/"><Methods/></FooterLink>
               <FooterLink to="/privacyPolicy" onClick={() => scrollToTopRef()}>Privacy Policy</FooterLink>
-       <FooterLink to="/cookiepolicy" onClick={() => scrollToTopRef()}>Cookie Police</FooterLink>
+       <FooterLink to="/cookiepolicy" onClick={() => scrollToTopRef()}>Cookie Policy</FooterLink>
        <FooterLink to="/status">Status</FooterLink>
        <FooterLink to="/faqs" onClick={() => scrollToTopRef()}>FAQ's</FooterLink>
        <FooterLink to="/codeofconduct">Code of conduct</FooterLink>
@@ -88,7 +88,7 @@ const Footer = () => {
 
   <FooterLinkTitle>Blog</FooterLinkTitle>
        <FooterLink to="/indexinfo">Index</FooterLink>
-       <FooterLink to="/researchanddevelopment">Research And Development</FooterLink>
+       <FooterLink to="/researchanddevelopment" onClick={() => scrollToTopRef()}>Research And Development</FooterLink>
        <FooterLink  to=""><Blog/></FooterLink>
             </FooterLinkItems>
 
@@ -109,23 +109,23 @@ Abrahamic
 </SocialLogo>
 <WebsiteRights >Abrahamic © {new Date().getFullYear()} All rights reserved</WebsiteRights>
 <SocialIcons>
-<SocialIconLink href="/" target="_blank"
-aria-label="Facebook">
+     
+<SocialIconLink href="https://www.facebook.com" target="_blank">
 <FaFacebook />
 </SocialIconLink>
-<SocialIconLink href="/" target="_blank"
+<SocialIconLink href="https://www.instagram.com" target="_blank"
 aria-label="Instagram">
 <FaInstagram />
 </SocialIconLink>
-<SocialIconLink href="/" target="_blank"
+<SocialIconLink href="https://twitter.com" target="_blank"
 aria-label="Twitter">
 <FaTwitter />
 </SocialIconLink>
-<SocialIconLink href="/" target="_blank"
+<SocialIconLink href="https://discord.com" target="_blank"
 aria-label="Discord">
 <FaDiscord />
 </SocialIconLink>
-<SocialIconLink href="/" target="_blank"
+<SocialIconLink href="https://www.linkedin.com" target="_blank"
 aria-label="Linkeding">
 <FaLinkedin />
 </SocialIconLink>

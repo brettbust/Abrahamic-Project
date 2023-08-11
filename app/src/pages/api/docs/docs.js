@@ -1,39 +1,48 @@
-import React from "react";
+import React, { useState, useRef } from "react";
 import { Link } from "react-router-dom";
+import { animateScroll as scroll } from "react-scroll";
 
-import { useState } from "react";
+const Docs = () => {
+  const scrollToTop = () => {
+    window.scrollTo(0, 0);
+  };
 
+  const scrollToTopRef = useRef(null);
 
-const Methods = () => {
-    const [showOptions, setShowOptions] = useState(false);
-    return (
-        <div>
-            <div onClick={() => setShowOptions(!showOptions)}>Docs</div>
-            {/* para que en lugar de un boton sea un enlace lo hago asi */}
-        {showOptions && (
-          <ul>
-            <li>
-                <Link className="link" to="/methods">Methods</Link>
-            </li>
-            <li>
-                <Link className="link" to="/quality">Quality Assurence</Link>
-            </li>
-            <li>
-                <Link className="link" to="/businessdevelopment">Business Development</Link>
-            </li>
-            <li>
-                <Link className="link" to="/security">Security</Link>
-            </li>
-            <li>
-                <Link className="link" to="/services">Services</Link>
-            </li>
-            <li>
-                <Link className="link" to="/reliability">Reliability</Link>
-            </li>
-          </ul>
-        )}
-      </div>
-    );
+  const [showOptions, setShowOptions] = useState(false);
+
+  const handleMilestoneClick = () => {
+    scrollToTop();
+    setShowOptions(false);
+  };
+
+  return (
+    <div>
+      <div onClick={() => setShowOptions(!showOptions)}>Docs</div>
+      {showOptions && (
+       <ul>
+       <li>
+           <Link className="link" to="/methods" onClick={scrollToTop}>Methods</Link>
+       </li>
+       <li>
+           <Link className="link" to="/quality" onClick={scrollToTop}>Quality Assurence</Link>
+       </li>
+       <li>
+           <Link className="link" to="/businessdevelopment" onClick={scrollToTop}>Business Development</Link>
+       </li>
+       <li>
+           <Link className="link" to="/security" onClick={scrollToTop}>Security</Link>
+       </li>
+       <li>
+           <Link className="link" to="/services" onClick={scrollToTop}>Services</Link>
+       </li>
+       <li>
+           <Link className="link" to="/reliability" onClick={scrollToTop}>Reliability</Link>
+       </li>
+     </ul>
+      )}
+    </div>
+  );
 };
 
-export default Methods;
+export default Docs;

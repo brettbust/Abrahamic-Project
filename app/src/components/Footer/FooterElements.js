@@ -35,11 +35,11 @@ export const FooterLinkItems = styled.div`
   display: flex;
   flex-direction: column;
   align-items: flex-start;
-  margin: 16px;
+  margin: 50px; /* separación columnas del footer */
   text-aling: left;
   width: 160px;
   box-sizing: border-box;
-  color: #fff;4
+  color: #fff;
 
   @media screen and (max-width: 420px) {
     margin: 0;

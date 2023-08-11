@@ -35,15 +35,12 @@ const Resources = () => {
             <li>
                 <Link className="link" to="/resourcesdesign">Design Development</Link>
             </li>
-            <li>
-                <Link className="link" to="/resourceseducation">Education</Link>
-            </li>
-            <li>
+           {/*  <li>
                 <Link className="link" to="/resorcesgeneral">General operations</Link>
-            </li>
-            <li>
+            </li> */}
+         {/*    <li>
                 <Link className="link" to="/resourcesprojectm">Project Managment</Link>
-            </li>
+            </li> */}
             <li>
                 <Link className="link" to="/resourcesbusiness">Business Analisis</Link>
             </li>

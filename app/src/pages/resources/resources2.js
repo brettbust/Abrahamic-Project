@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useState,useRef  } from "react";
 import { Link } from "react-router-dom";
 import "../styles/pages_styles.css";
 
@@ -19,6 +19,17 @@ const Resources2 = () => {
     }
   };
 
+  const scrollToTop = () => {
+    window.scrollTo(0, 0);
+  };
+
+  const scrollToTopRef = useRef(null);
+
+  const handleMilestoneClick = () => {
+    scrollToTop();
+    setShowOptions(false);
+  };
+
   return (
     <div>
       <a style={{ color: 'white', position:' relative', left:'0px', bottom:'160px', textDecoration: 'none'}} href="/" onClick={handleAboutClick}>
@@ -36,17 +47,14 @@ const Resources2 = () => {
           
         }}>
             <li>
-                <Link className="link" to="/resourcesdesign">Design Development</Link>
+                <Link className="link" to="/resourcesdesign" onClick={scrollToTop}>Design Development</Link>
             </li>
-            <li>
-                <Link className="link" to="/resourceseducation">Education</Link>
-            </li>
-            <li>
+          {/*   <li>
                 <Link className="link" to="/resorcesgeneral">General operations</Link>
-            </li>
-            <li>
+            </li> */}
+           {/*  <li>
                 <Link className="link" to="/resourcesprojectm">Project Managment</Link>
-            </li>
+            </li> */}
             <li>
                 <Link className="link" to="/resourcesbusiness">Business Analisis</Link>
             </li>

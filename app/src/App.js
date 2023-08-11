@@ -1,7 +1,7 @@
 import React from 'react';
 import './App.css';
-/* import { useTranslation } from 'react-i18next';
-import i18next from 'i18next'; */
+import { useTranslation } from 'react-i18next';
+import i18next from 'i18next';
 
 
 
@@ -34,7 +34,7 @@ import TechnicalSupport from './pages/aboutUs/technicalSupport';
 
 //* RUTAS DEL FOOTER - SECCIÓN Resources */
 
-import DesignInfo from './pages/resources/designInfo';
+import Design from './pages/resources/design';
 import EducationInfo from './pages/resources/educationInfo';
 import GeneralOperationInfo from './pages/resources/generalOperationInfo';
 import ProjectManagmentInfo from './pages/resources/projectmanagementInfo';
@@ -43,7 +43,7 @@ import BusinessAnalysisInfo from './pages/resources/businessAnalysisInfo';
 //* RUTAS DEL FOOTER - SECCIÓN BLOG */
 
 import Blog from './pages/blog/blog';
-import ForumInfo from './pages/blog/forumInfo';
+import Forum from './pages/blog/forum';
 import SocialChannels from './pages/blog/socialChannels';
 
 //* RUTAS DEL FOOTER - Features */
@@ -74,7 +74,7 @@ import PrivacyPolicy from './pages/api/privacyPolicy';
 //* RUTAS DEL FOOTER - Blog*/
 
 import IndexInfo from './pages/blog/indexInfo';
-import ResearchAndDevelopmentInfo from './pages/blog/researchAndDevelopmentInfo';
+import ResearchAndDevelopment from './pages/blog/researchAndDevelopment';
 import Community from './pages/blog/community';
 import Milestone from './pages/blog/milestone';
 import NewsLetterAndEvents from './pages/blog/newsLetterAndEventsInfo';
@@ -98,6 +98,10 @@ import ArtVentures from './pages/lab/artVentures';
 import NFTS from './pages/lab/nfts'; 
 
 import AuctionHouse from './pages/lab/auctionHouse';
+
+import LabEcosystemFunction from './pages/lab/labEcosystemFunction';
+
+import CryptoEducation from './pages/ecosystem/cryptoeducation';
 
 //responsability
 
@@ -142,18 +146,18 @@ function App() {
 
  
 
-/*   const { t } = useTranslation();
+  const { t } = useTranslation();
 
   function handleClick(lang) {
     i18next.changeLanguage(lang)
-  } */
+  }
 
 
 
   return (
     <>
       
-      {/* <div className="App">
+{/*       <div className="App">
   <nav style={{ width: '100%', padding: '2rem 0', backgroundColor:'gray' }}>
     <button onClick={()=>handleClick('en')} >
       English
@@ -181,7 +185,7 @@ function App() {
           <Route path="/development" element={<Development />} />
           <Route path="/ourmission" element={<OurMission />} />
           <Route path="/ourresearch" element={<OurResearch />} />
-          <Route path="/resourcesdesign" element={<DesignInfo />} />
+          <Route path="/resourcesdesign" element={<Design />} />
           <Route path="/resourceseducation" element={<EducationInfo />} />
           <Route path="/resorcesgeneral" element={<GeneralOperationInfo />} />
           <Route path="/resourcesprojectm" element={<ProjectManagmentInfo />} />
@@ -190,7 +194,7 @@ function App() {
           <Route path="/termsandconditions" element={<TermsAndConditionsInfo />} />
           <Route path="/cookiepolicy" element={<CookiePolicy />} />
           <Route path="/blog" element={<Blog />} />
-          <Route path="/forum" element={<ForumInfo />} />
+          <Route path="/forum" element={<Forum />} />
           <Route path="/socialchannels" element={<SocialChannels />} />
 
 
@@ -221,7 +225,7 @@ function App() {
           {/* RUTAS DEL FOOTER - SECCIÓN BLOG */}
 
           <Route path="/indexinfo" element={<IndexInfo />} />
-          <Route path="/researchanddevelopment" element={<ResearchAndDevelopmentInfo />} />
+          <Route path="/researchanddevelopment" element={<ResearchAndDevelopment />} />
           <Route path="/community" element={<Community />} />
           <Route path="/milestone" element={<Milestone />} />
           <Route path="/newsletterandevents" element={<NewsLetterAndEvents />} />
@@ -240,6 +244,8 @@ function App() {
           <Route path="/artventures" element={<ArtVentures />} />
           <Route path="/nfts" element={<NFTS />} />
           <Route path="/auctionhouse" element={<AuctionHouse />} />
+          <Route path="/labecosystemfunction" element={<LabEcosystemFunction />} />
+          <Route path="/cryptoeducation" element={<CryptoEducation />} />
 
           {/* RUTAS DEL FOOTER - SECCIÓN RESPONSABILITY */}
 

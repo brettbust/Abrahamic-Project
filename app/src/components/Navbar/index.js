@@ -7,9 +7,32 @@ import About2 from '../../pages/aboutUs/about2';
 import Careers from '../../pages/careers/careers';
 import { useRef } from 'react';
 import Resources from '../../pages/resources/resources';
+import { useTranslation } from 'react-i18next';
+import i18next from 'i18next'
+import whitepaperPDF from './pdf/whitepaper.pdf';
+
 
 
 const Navbar = ({ toggle }) => {
+
+
+  /* Languages */
+  
+  const { t } = useTranslation();
+
+  function handleClick(lang) {
+    i18next.changeLanguage(lang)
+  }
+
+  const handleDownload = () => {
+    const link = document.createElement('a');
+    link.href = whitepaperPDF;
+    link.download = 'whitepaper.pdf';
+    link.click();
+  };
+  
+
+
   const [mostrarSubMenu, setMostrarSubMenu] = useState(false);
   const [mostrarSubMenu2, setMostrarSubMenu2] = useState(false);
   const [mostrarSubMenu3, setMostrarSubMenu3] = useState(false);
@@ -252,7 +275,7 @@ const mostrarVideoHandler = () => {
             <li><a style={{ color: '#fff' }} href="zero">Zero</a></li>
             <li><a style={{ color: '#fff' }} href="crdata">CR Data</a></li>
             <li><a style={{ color: '#fff' }} href="storiesinfo">Stories</a></li>
-            <li><a style={{ color: '#fff' }} href="indexinfo">Index</a></li>
+           {/*  <li><a style={{ color: '#fff' }} href="indexinfo">Index</a></li> */}
             <li><a style={{ color: '#fff' }} href="researchanddevelopment">Research and Development</a></li>
           </ul>
         )}
@@ -284,9 +307,9 @@ const mostrarVideoHandler = () => {
                     fontSize: '19px',
             }}
           >
-            <li><a style={{ color: '#fff' }} href="welcome">Welcome</a></li>
-            <li><a style={{ color: '#fff' }} href="#">Crypto Education</a></li>
-            <li><a style={{ color: '#fff' }} href="#">Whitepaper</a></li>
+            {/* <li><a style={{ color: '#fff' }} href="welcome">Welcome</a></li> */}
+            <li><a style={{ color: '#fff' }} href="cryptoeducation">Crypto Education</a></li>
+            <li><a style={{ color: '#fff' }} href="#" onClick={handleDownload}>Whitepaper</a></li>
             <li><a style={{ color: '#fff' }} href="integration">Integration</a></li>
           </ul>
         )}
@@ -323,7 +346,7 @@ const mostrarVideoHandler = () => {
             <li><a style={{ color: '#fff' }} href="FinanceAndInvestment">Finance and Investment</a></li>
             <li><a style={{ color: '#fff' }} href="fineart">Fine ART</a></li>
             <li><a style={{ color: '#fff' }} href="governance">Governance</a></li>
-            <li><a style={{ color: '#fff' }} href="#">Lab Ecosystem Function</a></li>
+            <li><a style={{ color: '#fff' }} href="labecosystemfunction">Lab Ecosystem Function</a></li>
             <li><a style={{ color: '#fff' }} href="nfts">NFT'S</a></li>
           </ul>
         )}
@@ -361,7 +384,7 @@ const mostrarVideoHandler = () => {
         )}
             </NavItem>
             
-            <NavItem onMouseEnter={mostrarSubMenuHandler7} onMouseLeave={ocultarSubMenuHandler7}>
+            {/* <NavItem onMouseEnter={mostrarSubMenuHandler7} onMouseLeave={ocultarSubMenuHandler7}>
   <NavLinks
     to="languages"
     smooth={true}
@@ -388,7 +411,7 @@ const mostrarVideoHandler = () => {
       }}
     >
       <li>
-        <a style={{ color: '#fff' }} href="#" onClick={mostrarVideoHandler}>English</a>
+        <a style={{ color: '#fff' }} href="#" onClick={()=>handleClick('en')}>English</a>
         {mostrarVideo && (
           <video
             ref={videoRef}
@@ -408,7 +431,7 @@ const mostrarVideoHandler = () => {
         )}
       </li>
       <li>
-        <a style={{ color: '#fff' }} href="#" onClick={mostrarVideoHandlerJapones}>Japanese</a>
+        <a style={{ color: '#fff' }} href="#" onClick={()=>handleClick('ko')} >Korean</a>
         {mostrarVideoJapones && (
           <video
             ref={videoJaponesRef}
@@ -429,7 +452,7 @@ const mostrarVideoHandler = () => {
       </li>
     </ul>
   )}
-</NavItem>
+</NavItem> */}
 
 
 

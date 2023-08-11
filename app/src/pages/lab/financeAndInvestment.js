@@ -15,7 +15,7 @@ const FinanceAndInvestment = () => {
 
 
         <div style={styles.container}>
-            <h1 style={styles.title}>Governance</h1>
+            <h1 style={styles.title}>Finance and investing</h1>
             <div ref={scrollToTopRef} onClick={() => setShowOptions(!showOptions)}>
                 <h2>Introduction</h2>
                 <p>In recent years, venture capital, private equity, and direct private funds have emerged as popular and

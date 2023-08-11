@@ -7,5 +7,19 @@
     },
     "Main": {
         "1": "We focus on delivering quality software because we know how."
+    },
+    "Main2": {
+        "1": "We provide a set of technological solutions with the aim of making your company or business grow.."
+
+    },
+    "navbarItems": {
+        "1": "Information",
+        "2": "Features",
+        "3": "Responsability",
+        "4": "Ecosystem",
+        "5": "Lab",
+        "6": "Partners",
+        "7": "Languages"
+
     }
 }

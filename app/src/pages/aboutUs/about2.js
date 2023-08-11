@@ -34,16 +34,16 @@ const About2 = () => {
           transition: "height 0.3s ease-out, padding 0.3s ease-out",
         }}
       >
-        <li>
+       {/*  <li>
           <Link className="link" to="/founders">
             Founders
           </Link>
-        </li>
-        <li>
+        </li> */}
+        {/* <li>
           <Link className="link" to="/executives">
             Executives
           </Link>
-        </li>
+        </li> */}
         {/* <li>
           <Link className="link" to="/research">
             Research
@@ -55,10 +55,15 @@ const About2 = () => {
           </Link>
         </li>
         <li>
+          <Link className="link" to="/welcome">
+             Welcome
+          </Link>
+        </li>
+       {/*  <li>
           <Link className="link" to="/technicalsupport">
             Technical Support
           </Link>
-        </li>
+        </li> */}
       </ul>
     </div>
   );

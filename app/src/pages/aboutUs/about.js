@@ -33,12 +33,12 @@ const About = () => {
         position: ' relative', left: '0px', bottom: '30px',
  
         }}>
-            <li >
+         {/*    <li >
                 <Link className="link" to="/founders">Founders</Link>
-            </li>
-            <li>
+            </li> */}
+          {/*   <li>
                 <Link className="link" to="/executives">Executives</Link>
-            </li>
+            </li> */}
           {/*   <li>
                 <Link className="link" to="/research">Research</Link>
             </li> */}
@@ -46,8 +46,11 @@ const About = () => {
                 <Link className="link" to="/development">Development</Link>
             </li>
             <li>
-                <Link className="link" to="/technicalsupport">Technical Support</Link>
+                <Link className="link" to="/welcome">Welcome</Link>
             </li>
+            {/* <li>
+                <Link className="link" to="/technicalsupport">Technical Support</Link>
+            </li> */}
           </ul>
     </div>
   );
