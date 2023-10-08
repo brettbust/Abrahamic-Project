@@ -80,6 +80,7 @@ const Footer = () => {
        <FooterLink to="/cookiepolicy" onClick={() => scrollToTopRef()}>Cookie Policy</FooterLink>
        <FooterLink to="/status">Status</FooterLink>
        <FooterLink to="/faqs" onClick={() => scrollToTopRef()}>FAQ's</FooterLink>
+       <FooterLink to="/transparency" onClick={() => scrollToTopRef()}>Transparency Disclosure</FooterLink>
        <FooterLink to="/codeofconduct">Code of conduct</FooterLink>
        <FooterLink to="/customercare">Customer Care</FooterLink>
        {/* <FooterLink to="/">Log in</FooterLink> */}
@@ -87,7 +88,7 @@ const Footer = () => {
   <FooterLinkItems>
 
   <FooterLinkTitle>Blog</FooterLinkTitle>
-       <FooterLink to="/indexinfo">Index</FooterLink>
+       <FooterLink to="/index" onClick={() => scrollToTopRef()}>Index</FooterLink>
        <FooterLink to="/researchanddevelopment" onClick={() => scrollToTopRef()}>Research And Development</FooterLink>
        <FooterLink  to=""><Blog/></FooterLink>
             </FooterLinkItems>

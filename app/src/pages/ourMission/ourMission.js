@@ -1,6 +1,7 @@
 import React from "react";
 import { Link } from "react-router-dom";
 import { useState } from "react";
+import ReturnHome from "../../components/Buttons/returnhome";
 
 const OurMission = () => {
     const [showOptions, setShowOptions] = useState(false);
@@ -26,7 +27,9 @@ const OurMission = () => {
                     </li>
                 </ul>
             )}
-            <Link to="/" style={styles.button}>Return to Home</Link>
+
+            <ReturnHome />
+        
         </div>
     );
 };

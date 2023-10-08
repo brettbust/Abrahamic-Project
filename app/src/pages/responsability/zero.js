@@ -2,6 +2,7 @@ import React from "react";
 import { Link } from "react-router-dom";
 import { useState } from "react";
 import { useRef } from "react";
+import ReturnHome from "../../components/Buttons/returnhome";
 
 const Zero = () => {
 
@@ -590,7 +591,7 @@ tangible assets.</p>
 
 
             </div>
-            <Link to="/" onClick={() => scrollToTopRef.scrollIntoView({ behavior: 'smooth', block: 'start'})}  style={styles.button}>Return to Home</Link>
+            <ReturnHome />
         </div>
     );
 };
@@ -603,37 +604,16 @@ const styles = {
         boxShadow: "0px 0px 10px #282c34",
         display: "flex",
         flexDirection: "column",
-        alignItems: "justify",
-        justifyContent: "justify",
+        alignItems: "center",
+        justifyContent: "center",
         minHeight: "100vh",
         textAlign: "justify",
+       
     },
     title: {
         textAlign: "center",
         fontSize: "36px",
         margin: "0 0 20px 0"
-    },
-    button: {
-        backgroundColor: "white",
-        color: "#282c34",
-        padding: "10px 20px",
-        borderRadius: "5px",
-        textDecoration: "none",
-        fontWeight: "bold",
-        fontSize: "16px",
-        boxShadow: "0px 0px 5px white",
-        transition: "all 0.2s ease-in-out",
-        cursor: "pointer",
-        border: "none",
-        width: "12%",
-        position: "relative",
-        left: "44%",
-        textAlign: "center",
-    },
-    buttonHover: {
-        backgroundColor: "#282c34",
-        color: "white",
-        boxShadow: "0px 0px 5px white",
     },
 
     p: {

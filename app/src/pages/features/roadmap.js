@@ -1,19 +1,29 @@
-import React from 'react';
-
+import React from "react";
+import { Link } from "react-router-dom";
+import { useState } from "react";
+import { useRef } from "react";
 import RoadmapDiagram from '../../images/diagram.png';
 
-import { Link } from "react-router-dom";
 
-import { useRef } from "react";
+import ReturnHome from "../../components/Buttons/returnhome";
 
 
 
 const Roadmap = () => {
-  const scrollToTopRef = useRef(null);
+
+    const [showOptions, setShowOptions] = useState(false);
+
+    const scrollToTopRef = useRef(null);
+      
+
     return (
-        <div style={styles.container}> 
-            <h2 style={styles.title}>Roadmap</h2>
-      <p>
+
+
+        <div style={styles.container}>
+            <h1 style={styles.title}>Roadmap</h1>
+            <div ref={scrollToTopRef} onClick={() => setShowOptions(!showOptions)}>
+            
+            <p>
         The Abrahamic Ecosystem is a new innovation in financial engineering that is tangible to customers and investors. Investors can purchase the Abrahamic cryptocurrency, which is invested in the Abrahamic lab ecosystem fund.
       </p>
       <p>
@@ -141,10 +151,17 @@ const Roadmap = () => {
   <p>Modern furniture, sporting goods, and recreation gear in 2nd part of the road map.</p>
   <h3>10. Logistics</h3>
         <p>Co-packing and national distribution – in the 1st part of the road map Most of the above-mentioned products will be utilized on a co-packing level for a national distribution. Some of the other products will be utilized for national distribution only. International export for business products – in the 2nd part of the roadmap.</p>
-        <img src={RoadmapDiagram} alt="Roadmap Diagram" />
-        <Link to="/" onClick={() => scrollToTopRef.scrollIntoView({ behavior: 'smooth', block: 'start'})}  style={styles.button}>Return to Home</Link>
+          
         </div>
- );
+          
+          <img src={RoadmapDiagram} alt="Roadmap Diagram" width={700} height={700} />
+
+            
+           
+
+            <ReturnHome/>
+        </div>
+    );
 };
 
 const styles = {
@@ -155,6 +172,8 @@ const styles = {
         boxShadow: "0px 0px 10px #282c34",
         display: "flex",
         flexDirection: "column",
+        alignItems: "center",
+        justifyContent: "center",
         minHeight: "100vh",
         textAlign: "justify",
     },
@@ -163,27 +182,6 @@ const styles = {
         fontSize: "36px",
         margin: "0 0 20px 0"
     },
-    button: {
-      display: 'block',
-    margin: '2rem auto 0',
-    padding: '0.5rem 1rem',
-    backgroundColor: "white",
-    color: "#282c34",
-    textDecoration: 'none',
-    borderRadius: '5px',
-    textAlign: 'center',
-    width: '10rem',
-    fontWeight: 'bold',
-    fontSize: '1.1rem',
-    boxShadow: "0px 0px 5px white",
-    transition: 'background-color 0.3s ease'
-    },
-    buttonHover: {
-      backgroundColor: "#282c34",
-      color: "white",
-      boxShadow: "0px 0px 5px white",
-  },
-
     p: {
         textAlign: "justify",
     }

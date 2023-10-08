@@ -5,6 +5,7 @@ import { useRef } from "react";
 import audiomp3_1 from "./audios/arteng_audio_1.mp3";
 import audiomp3_2 from "./audios/arteng_audio_2.mp3";
 import ai_audio from "../../images/ai_audio.png";
+import ReturnHome from "../../components/Buttons/returnhome";
 
 
 const ArtengStudio = () => {
@@ -147,7 +148,7 @@ const ArtengStudio = () => {
           <p>ARTENG will act on your behalf to track any illegal copies of your work and take appropriate actions to protect your interests.</p>
 <p>For a future sign up for ARTENG (ICOA), you’ll have to send your portfolio via email or fill out our contact form when it becomes available, as our website is currently under development and is a work in progress. ARTENG will provide a valuable service for artists establishing the authenticity of their artwork and protection of their interests in the art market.</p>
             </div>
-            <Link to="/" onClick={() => scrollToTopRef.scrollIntoView({ behavior: 'smooth', block: 'start'})}  style={styles.button}>Return to Home</Link>
+            <ReturnHome/>
         </div>
     );
 };
@@ -171,25 +172,6 @@ const styles = {
         textAlign: "center",
         fontSize: "80px",
         margin: "0 0 20px 0"
-    },
-    button: {
-        backgroundColor: "white",
-        color: "#282c34",
-        padding: "10px 20px",
-        borderRadius: "5px",
-        textDecoration: "none",
-        fontWeight: "bold",
-        fontSize: "16px",
-        marginTop: "20px",
-        boxShadow: "0px 0px 5px white",
-        transition: "all 0.2s ease-in-out",
-        cursor: "pointer",
-        border: "none"
-    },
-    buttonHover: {
-        backgroundColor: "#282c34",
-        color: "white",
-        boxShadow: "0px 0px 5px white",
     },
 
     p: {

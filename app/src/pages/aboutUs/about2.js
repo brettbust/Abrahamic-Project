@@ -49,14 +49,15 @@ const About2 = () => {
             Research
           </Link>
         </li> */}
-        <li>
-          <Link className="link" to="/development">
-            Development
-          </Link>
-        </li>
+       
         <li>
           <Link className="link" to="/welcome">
              Welcome
+          </Link>
+        </li>
+        <li>
+          <Link className="link" to="/development">
+            Development
           </Link>
         </li>
        {/*  <li>

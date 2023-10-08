@@ -2,6 +2,7 @@ import React from "react";
 import { Link } from "react-router-dom";
 import { useState } from "react";
 import { useRef } from "react";
+import ReturnHome from "../../components/Buttons/returnhome";
 
 const CookiePolicy = () => {
 
@@ -144,8 +145,12 @@ your cookies on your browser, you will need to revisit this screen to re-save yo
                     
 
                 </ul>
-            </div>
-            <Link to="/" onClick={() => scrollToTopRef.scrollIntoView({ behavior: 'smooth', block: 'start'})}  style={styles.button}>Return to Home</Link>
+        </div>
+        <div style={{position: 'relative', left: '0px', bottom: '0px', textAlign: 'center', width: '100%'}}>
+        <ReturnHome />
+        </div>
+
+
         </div>
     );
 };
@@ -156,37 +161,19 @@ const styles = {
         backgroundColor: "#041f26",
     color: "white",
     /* padding: "10px 20px 0px 0px",  */
-        padding: "50px 400px 40px 40px",
+        padding: "50px 400px 40px 40x",
         boxShadow: "0px 0px 10px #282c34",
     minHeight: "100vh",
         //justificamos el contenido del texto
-        textAlign: "justify",
+  textAlign: "justify",
+  alignItems: "center",
+  
+      
     },
     title: {
         textAlign: "center",
         fontSize: "36px",
         margin: "0 0 20px 0"
-    },
-  button: {
-        position: "relative",
-        display: "inline-block",
-        left: "70%",
-        backgroundColor: "white",
-        color: "#282c34",
-        padding: "10px 20px",
-        borderRadius: "5px",
-        textDecoration: "none",
-        fontWeight: "bold",
-        fontSize: "16px",
-        boxShadow: "0px 0px 5px white",
-        transition: "all 0.2s ease-in-out",
-        cursor: "pointer",
-        border: "none",
-    },
-    buttonHover: {
-        backgroundColor: "#282c34",
-        color: "white",
-        boxShadow: "0px 0px 5px white",
     },
 }
 

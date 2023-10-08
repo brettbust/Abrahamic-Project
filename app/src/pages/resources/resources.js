@@ -33,7 +33,7 @@ const Resources = () => {
           transition: "height 0.3s ease-out, padding 0.3s ease-out",
         }}>
             <li>
-                <Link className="link" to="/resourcesdesign">Design Development</Link>
+                <Link className="link" to="/designdevelopment">Design Development</Link>
             </li>
            {/*  <li>
                 <Link className="link" to="/resorcesgeneral">General operations</Link>
@@ -42,7 +42,7 @@ const Resources = () => {
                 <Link className="link" to="/resourcesprojectm">Project Managment</Link>
             </li> */}
             <li>
-                <Link className="link" to="/resourcesbusiness">Business Analisis</Link>
+                <Link className="link" to="/resourcesbusiness">Business Analysis</Link>
             </li>
           </ul>
     </div>

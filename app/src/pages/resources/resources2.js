@@ -47,7 +47,7 @@ const Resources2 = () => {
           
         }}>
             <li>
-                <Link className="link" to="/resourcesdesign" onClick={scrollToTop}>Design Development</Link>
+                <Link className="link" to="/designdevelopment" onClick={scrollToTop}>Design Development</Link>
             </li>
           {/*   <li>
                 <Link className="link" to="/resorcesgeneral">General operations</Link>
@@ -56,7 +56,7 @@ const Resources2 = () => {
                 <Link className="link" to="/resourcesprojectm">Project Managment</Link>
             </li> */}
             <li>
-                <Link className="link" to="/resourcesbusiness">Business Analisis</Link>
+                <Link className="link" to="/resourcesbusiness">Business Analysis</Link>
             </li>
           </ul>
     </div>

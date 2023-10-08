@@ -195,19 +195,19 @@ const mostrarVideoHandler = () => {
           position: 'absolute', 
           top: '80px', 
           left: '448px', 
-                  backgroundColor: '#041F26',
+          backgroundColor: '#041F26',
           padding: '10px',
           listStyle: 'none',
-              display: 'flex',
-              flexDirection: 'column',
-                  alignItems: 'flex-start',
-                  fontSize: '19px',
+          display: 'flex',
+          flexDirection: 'column',
+          alignItems: 'flex-start',
+          fontSize: '19px',
         }}>
-          <li><a style={{ color: '#fff', }} href=""><About2/></a></li>
-          <li><a style={{ color: '#fff' }} href="/ourmission">Our Mission</a></li>
-          <li><a style={{ color: '#fff' }} href="/ourresearch">Our Research</a></li>
-          <li><a style={{ color: '#fff' }} href="#"><Careers/></a></li>
-          <li><a style={{ color: '#fff' }} href="#"><Resources/></a></li>
+          <li style={{ margin: '0px 15px' }}><a style={{ color: '#fff' }} href=""><About2/></a></li>
+          <li style={{ margin: '0px 0' }}><a style={{ color: '#fff' }} href="/ourmission">Our Mission</a></li>
+          <li style={{ margin: '0px 0' }}><a style={{ color: '#fff' }} href="/ourresearch">Our Research</a></li>
+          <li style={{ margin: '0px -10px' }}><a style={{ color: '#fff' }} href="#"><Careers/></a></li>
+          <li style={{ margin: '0px -10px' }}><a style={{ color: '#fff' }} href="#"><Resources/></a></li>
         </ul>
               )}
             </NavItem>

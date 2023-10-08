@@ -2,6 +2,7 @@ import React from "react";
 import { Link } from "react-router-dom";
 import { useState } from "react";
 import { useRef } from "react";
+import ReturnHome from "../../components/Buttons/returnhome";
 
 const Governance = () => {
 
@@ -91,10 +92,11 @@ const Governance = () => {
                 <p>Thank you for joining us on this journey towards a more inclusive and sustainable blockchain governance model to bring the best ideas individually (One-by-one) for voting, bringing proof of ownership to the table for a clearly defined way to the platform, which references sustainable development and participation. This is where the best ideas thrive.</p>
    
             </div>
-            <Link to="/" onClick={() => scrollToTopRef.scrollIntoView({ behavior: 'smooth', block: 'start'})}  style={styles.button}>Participate</Link>
-            <Link to="/" onClick={() => scrollToTopRef.scrollIntoView({ behavior: 'smooth', block: 'start'})}  style={styles.button}>Voting</Link>
-            <Link to="/" onClick={() => scrollToTopRef.scrollIntoView({ behavior: 'smooth', block: 'start'})}  style={styles.button}>Proposals</Link>
-            <Link to="/" onClick={() => scrollToTopRef.scrollIntoView({ behavior: 'smooth', block: 'start'})}  style={styles.button}>Return to Home</Link>
+
+            <button style={styles.button}><Link style={{ textDecoration: 'none' }} to="/workinprogress" onClick={() => scrollToTopRef.scrollIntoView({ behavior: 'smooth', block: 'start'})}  >Participate</Link></button>
+            <button style={styles.button}><Link style={{ textDecoration: 'none' }} to="/workinprogress" onClick={() => scrollToTopRef.scrollIntoView({ behavior: 'smooth', block: 'start'})}  >Voting</Link></button>
+            <button style={styles.button}><Link style={{ textDecoration: 'none' }} to="/workinprogress" onClick={() => scrollToTopRef.scrollIntoView({ behavior: 'smooth', block: 'start'})}  >Proposals</Link></button>
+            <ReturnHome/>
         </div>
     );
 };
@@ -117,6 +119,7 @@ const styles = {
         fontSize: "36px",
         margin: "0 0 20px 0"
     },
+
     button: {
         backgroundColor: "white",
         color: "#282c34",
@@ -130,13 +133,14 @@ const styles = {
         transition: "all 0.2s ease-in-out",
         cursor: "pointer",
         border: "none"
+        
     },
     buttonHover: {
         backgroundColor: "#282c34",
         color: "white",
         boxShadow: "0px 0px 5px white",
     },
-
+   
     p: {
         textAlign: "justify",
     }

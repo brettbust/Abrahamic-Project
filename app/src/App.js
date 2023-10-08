@@ -34,11 +34,7 @@ import TechnicalSupport from './pages/aboutUs/technicalSupport';
 
 //* RUTAS DEL FOOTER - SECCIÓN Resources */
 
-import Design from './pages/resources/design';
-import EducationInfo from './pages/resources/educationInfo';
-import GeneralOperationInfo from './pages/resources/generalOperationInfo';
-import ProjectManagmentInfo from './pages/resources/projectmanagementInfo';
-import BusinessAnalysisInfo from './pages/resources/businessAnalysisInfo';
+import DesignDevelopment from './pages/resources/designdevelopment';
 
 //* RUTAS DEL FOOTER - SECCIÓN BLOG */
 
@@ -55,29 +51,23 @@ import Content from './pages/features/content';
 
 //* RUTAS DEL FOOTER - SECCIÓN API*/
 
-import OverviewInfo from './pages/api/overviewInfo';
 import Methods from './pages/api/docs/methods';
-import Quality from './pages/api/docs/quality';
+import QualityAssurance from './pages/api/docs/quality';
 import BusinessDevelopment from './pages/api/docs/business_development';
 import Security from './pages/api/docs/security';
 import SeeAllServices from './pages/api/docs/see_all_services';
 import Services from './pages/api/docs/services';
 import Reliability from './pages/api/docs/reliability';
-import TermsAndConditionsInfo from './pages/api/termsAndConditionsInfo';
 import CookiePolicy from './pages/api/cookiePolicy';
-import CodeOfConductInfo from './pages/api/codeOfConductInfo';
-import CustomerCareInfo from './pages/api/customerCareInfo';
-import StatusInfo from './pages/api/statusInfo';
 import Faqs from './pages/api/faqs';
+import TransparencyDisclosure from './pages/api/transparencydisclosure';
 import PrivacyPolicy from './pages/api/privacyPolicy';
 
 //* RUTAS DEL FOOTER - Blog*/
 
-import IndexInfo from './pages/blog/indexInfo';
-import ResearchAndDevelopment from './pages/blog/researchAndDevelopment';
+import ResearchAndDevelopment from './pages/responsability/researchAndDevelopment';
 import Community from './pages/blog/community';
 import Milestone from './pages/blog/milestone';
-import NewsLetterAndEvents from './pages/blog/newsLetterAndEventsInfo';
 import Publications from './pages/blog/publications';
 
 //* RUTAS DEL FOOTER - SECCIÓN PARTNERS */
@@ -142,6 +132,12 @@ import Others from './pages/careers/others';
 import Welcome from './pages/ecosystem/welcome';
 import Integration from './pages/ecosystem/integration';
 
+//Workingprogress
+
+import Workingprogress from './pages/workinprogress';
+
+import Index from './pages/blog/index';
+
 function App() {
 
  
@@ -182,16 +178,16 @@ function App() {
           <Route path="/founders" element={<Founders />} />
           <Route path="/executives" element={<Executives />} />
           <Route path="/technicalsupport" element={<TechnicalSupport />} />
-          <Route path="/development" element={<Development />} />
+          <Route path="/development" element={<Workingprogress />} />
           <Route path="/ourmission" element={<OurMission />} />
           <Route path="/ourresearch" element={<OurResearch />} />
-          <Route path="/resourcesdesign" element={<Design />} />
-          <Route path="/resourceseducation" element={<EducationInfo />} />
-          <Route path="/resorcesgeneral" element={<GeneralOperationInfo />} />
-          <Route path="/resourcesprojectm" element={<ProjectManagmentInfo />} />
-          <Route path="/resourcesbusiness" element={<BusinessAnalysisInfo />} />
-          <Route path="/apioverview" element={<OverviewInfo />} />
-          <Route path="/termsandconditions" element={<TermsAndConditionsInfo />} />
+          <Route path="/designdevelopment" element={<DesignDevelopment />} />
+          <Route path="/resourceseducation" element={<Workingprogress />} />
+          <Route path="/resorcesgeneral" element={<Workingprogress />} />
+          <Route path="/resourcesprojectm" element={<Workingprogress />} />
+          <Route path="/resourcesbusiness" element={<Workingprogress />} />
+          <Route path="/apioverview" element={<Workingprogress />} />
+          <Route path="/termsandconditions" element={<Workingprogress />} />
           <Route path="/cookiepolicy" element={<CookiePolicy />} />
           <Route path="/blog" element={<Blog />} />
           <Route path="/forum" element={<Forum />} />
@@ -208,27 +204,28 @@ function App() {
           {/* RUTAS DEL FOOTER - SECCIÓN API */}
 
           <Route path="/methods" element={<Methods />} />
-          <Route path="/quality" element={<Quality />} />
+          <Route path="/qualityassurance" element={<QualityAssurance />} />
           <Route path="/businessdevelopment" element={<BusinessDevelopment />} />
           <Route path="/security" element={<Security />} />
           <Route path="/seeallservices" element={<SeeAllServices />} />
           <Route path="/services" element={<Services />} />
           <Route path="/reliability" element={<Reliability />} />
-          <Route path="/codeofconduct" element={<CodeOfConductInfo />} />
-          <Route path="/customercare" element={<CustomerCareInfo />} />
-          <Route path="/status" element={<StatusInfo />} />
+          <Route path="/codeofconduct" element={<Workingprogress />} />
+          <Route path="/customercare" element={<Workingprogress />} />
+          <Route path="/status" element={<Workingprogress />} />
           <Route path="/faqs" element={<Faqs />} />
+         <Route path="/transparency" element={<TransparencyDisclosure />} />
           <Route path="/privacypolicy" element={<PrivacyPolicy />} />
           
           
 
           {/* RUTAS DEL FOOTER - SECCIÓN BLOG */}
 
-          <Route path="/indexinfo" element={<IndexInfo />} />
+          <Route path="/index" element={<Index />} />
           <Route path="/researchanddevelopment" element={<ResearchAndDevelopment />} />
           <Route path="/community" element={<Community />} />
           <Route path="/milestone" element={<Milestone />} />
-          <Route path="/newsletterandevents" element={<NewsLetterAndEvents />} />
+          <Route path="/newsletterandevents" element={<Workingprogress />} />
           <Route path="/publications" element={<Publications />} />
 
           {/* RUTAS DEL FOOTER - SECCIÓN PARTNERS */}
@@ -251,7 +248,7 @@ function App() {
 
           <Route path="/zero" element={<Zero />} />
           <Route path="/crdata" element={<Crdata />} />
-          <Route path="/storiesinfo" element={<Stories />} />
+          <Route path="/storiesinfo" element={<Workingprogress />} />
 
           {/* RUTAS DEL FOOTER - SECCIÓN CAREERS */}
 
@@ -286,8 +283,16 @@ function App() {
           <Route path="/welcome" element={<Welcome />} />
           <Route path="/integration" element={<Integration />} />
 
+          {/* botones de governance */}
+
+          <Route path="/workinprogress" element={<Workingprogress />} />
+
+
+
   </Routes>
-</Router>
+      </Router>
+      
+
 
     </>
   );

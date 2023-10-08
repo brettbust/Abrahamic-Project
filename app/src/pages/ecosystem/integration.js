@@ -5,6 +5,7 @@ import { useRef } from "react";
 
 import Abrahamic_methods from "../../images/abrahamic_methods.png";
 import Facilitating_col_inn from "../../images/facilitating_col_inn.png";
+import ReturnHome from "../../components/Buttons/returnhome.js";
 
 const Integration = () => {
 
@@ -100,7 +101,7 @@ Abrahamic ecosystem will be using this coordination’s as a base for more resea
 better services, planification and data solutions.</h6>
 
             </div>
-            <Link to="/" onClick={() => scrollToTopRef.scrollIntoView({ behavior: 'smooth', block: 'start'})}  style={styles.button}>Return to Home</Link>
+            <ReturnHome/>
         </div>
     );
 };
@@ -113,8 +114,8 @@ const styles = {
         boxShadow: "0px 0px 10px #282c34",
         display: "flex",
         flexDirection: "column",
-        alignItems: "justify",
-        justifyContent: "justify",
+        alignItems: "center",
+        justifyContent: "center",
         minHeight: "100vh",
         textAlign: "justify",
     },
@@ -123,30 +124,7 @@ const styles = {
         fontSize: "36px",
         margin: "0 0 20px 0"
     },
-    button: {
-        backgroundColor: "white",
-        color: "#282c34",
-        padding: "10px 20px",
-        borderRadius: "5px",
-        textDecoration: "none",
-        fontWeight: "bold",
-        fontSize: "16px",
-        boxShadow: "0px 0px 5px white",
-        transition: "all 0.2s ease-in-out",
-        cursor: "pointer",
-        border: "none",
-        width: "12%",
-        position: "relative",
-        left: "44%",
-        top: "10px",
-        textAlign: "center",
-    },
-    buttonHover: {
-        backgroundColor: "#282c34",
-        color: "white",
-        boxShadow: "0px 0px 5px white",
-    },
-
+    
     p: {
         textAlign: "justify",
     },

@@ -3,6 +3,7 @@ import { Link } from "react-router-dom";
 import { useState } from "react";
 import { useRef } from "react";
 import forumImage from "../../images/forumImage.png";
+import ReturnHome from '../../components/Buttons/returnhome';
 
 const Forum= () => {
 
@@ -12,7 +13,7 @@ const Forum= () => {
 
     return (
         <div style={styles.container}>
-        <h1 style={styles.title}>Abrahamic Forum in cryptocurrency</h1>
+        <h1 style={styles.title}>Forum</h1>
         
         <p>The Abrahamic Forums will play a crucial role in the cryptocurrency ecosystem as
 platforms for discussion, knowledge sharing, and community engagement. They will
@@ -108,7 +109,7 @@ search functionality will save time and help participants find relevant discussi
      
 
             <div style={{ textAlign: 'center' }}>
-                <Link to="/" onClick={() => scrollToTopRef.scrollIntoView({ behavior: 'smooth', block: 'start' })} style={styles.button}>Return to Home</Link>
+                <ReturnHome />
             </div>
 
         </div>
@@ -138,25 +139,6 @@ const styles = {
         textAlign: "center",
         fontSize: "36px",
         margin: "0 0 20px 0"
-    },
-    button: {
-        backgroundColor: "white",
-        color: "#282c34",
-        padding: "10px 20px",
-        borderRadius: "5px",
-        textDecoration: "none",
-        fontWeight: "bold",
-        fontSize: "16px",
-        marginTop: "20px",
-        boxShadow: "0px 0px 5px white",
-        transition: "all 0.2s ease-in-out",
-        cursor: "pointer",
-        border: "none"
-    },
-    buttonHover: {
-        backgroundColor: "#282c34",
-        color: "white",
-        boxShadow: "0px 0px 5px white",
     },
 
     p: {

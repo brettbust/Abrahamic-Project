@@ -11,7 +11,7 @@ return (
             color: '#4880b3',
             fontSize: '100px',
             fontFamily: 'sans-serif',
-        }}>Work in progr</span><span style={{
+        }}>Work in Progr</span><span style={{
             color: 'white',
                 fontSize: '100px',
                 fontFamily: 'sans-serif',

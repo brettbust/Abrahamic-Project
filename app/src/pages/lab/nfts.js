@@ -2,6 +2,7 @@ import React from "react";
 import { Link } from "react-router-dom";
 import { useState } from "react";
 import { useRef } from "react";
+import ReturnHome from "../../components/Buttons/returnhome";
 
 const NFTS = () => {
 
@@ -39,7 +40,7 @@ const NFTS = () => {
             
             </div>
 
-            <Link to="/" onClick={() => scrollToTopRef.scrollIntoView({ behavior: 'smooth', block: 'start'})}  style={styles.button}>Return to Home</Link>
+            <ReturnHome/>
         </div>
     );
 };
@@ -61,25 +62,6 @@ const styles = {
         textAlign: "center",
         fontSize: "36px",
         margin: "0 0 20px 0"
-    },
-    button: {
-        backgroundColor: "white",
-        color: "#282c34",
-        padding: "10px 20px",
-        borderRadius: "5px",
-        textDecoration: "none",
-        fontWeight: "bold",
-        fontSize: "16px",
-        marginTop: "20px",
-        boxShadow: "0px 0px 5px white",
-        transition: "all 0.2s ease-in-out",
-        cursor: "pointer",
-        border: "none"
-    },
-    buttonHover: {
-        backgroundColor: "#282c34",
-        color: "white",
-        boxShadow: "0px 0px 5px white",
     },
 
     p: {

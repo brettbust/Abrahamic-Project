@@ -3,6 +3,7 @@ import { Link } from "react-router-dom";
 import { useState } from "react";
 import { useRef } from "react";
 import bdImage from "../../../images/bdImage.png";
+import ReturnHome from '../../../components/Buttons/returnhome';
 
 const BusinessDevelopment = () => {
 
@@ -14,7 +15,7 @@ const BusinessDevelopment = () => {
         <div style={styles.container}>
         
         
-            <h1 style={styles.title}>Abrahamic Business Development</h1><br /><br />
+            <h1 style={styles.title}>Business Development</h1><br /><br />
 
             <p>In today's rapidly evolving digital landscape, cryptocurrencies have emerged as a transformative force, providing innovative solutions and opportunities. But for Abrahamic, we want to mold the landscape with new ideas and transformations for the technological and tangible from startups, small businesses, and medium industries, and building new software to contribute to the utilities as we mentioned before. Abrahamic Crypto recognizes the potential of technology and aims to empower businesses of the future by offering comprehensive business development solutions tailored to their unique needs. These projects will explore how Abrahamic's business development initiatives can fuel growth, enhance efficiency, and foster a dependable environment for businesses worldwide, and this is part of what separates the Abrahamic Crypto ecosystem from the rest.</p>
             
@@ -361,7 +362,7 @@ shipping_durations = []
 
               
             <div style={{ textAlign: 'center' }}>
-                <Link to="/" onClick={() => scrollToTopRef.scrollIntoView({ behavior: 'smooth', block: 'start' })} style={styles.button}>Return to Home</Link>
+                <ReturnHome />
             </div>
 
         </div>
@@ -384,26 +385,7 @@ const styles = {
         fontSize: "36px",
         margin: "0 0 20px 0"
     },
-    button: {
-        backgroundColor: "white",
-        color: "#282c34",
-        padding: "10px 20px",
-        borderRadius: "5px",
-        textDecoration: "none",
-        fontWeight: "bold",
-        fontSize: "16px",
-        marginTop: "20px",
-        boxShadow: "0px 0px 5px white",
-        transition: "all 0.2s ease-in-out",
-        cursor: "pointer",
-        border: "none"
-    },
-    buttonHover: {
-        backgroundColor: "#282c34",
-        color: "white",
-        boxShadow: "0px 0px 5px white",
-    },
-
+   
     p: {
         textAlign: "justify",
     },

@@ -25,7 +25,7 @@ const Docs = () => {
            <Link className="link" to="/methods" onClick={scrollToTop}>Methods</Link>
        </li>
        <li>
-           <Link className="link" to="/quality" onClick={scrollToTop}>Quality Assurence</Link>
+           <Link className="link" to="/qualityassurance" onClick={scrollToTop}>Quality Assurance</Link>
        </li>
        <li>
            <Link className="link" to="/businessdevelopment" onClick={scrollToTop}>Business Development</Link>
