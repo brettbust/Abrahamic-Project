@@ -384,7 +384,7 @@ const mostrarVideoHandler = () => {
         )}
             </NavItem>
             
-            {/* <NavItem onMouseEnter={mostrarSubMenuHandler7} onMouseLeave={ocultarSubMenuHandler7}>
+            <NavItem onMouseEnter={mostrarSubMenuHandler7} onMouseLeave={ocultarSubMenuHandler7}>
   <NavLinks
     to="languages"
     smooth={true}
@@ -452,7 +452,7 @@ const mostrarVideoHandler = () => {
       </li>
     </ul>
   )}
-</NavItem> */}
+</NavItem>
 
 
 

@@ -31,6 +31,12 @@ const Docs = () => {
            <Link className="link" to="/businessdevelopment" onClick={scrollToTop}>Business Development</Link>
        </li>
        <li>
+           <Link className="link" to="/legalandethical" onClick={scrollToTop}>Legal and Ethical Framework</Link>
+       </li>
+       <li>
+           <Link className="link" to="/businessdevelopment" onClick={scrollToTop}>Business Development</Link>
+       </li>
+       <li>
            <Link className="link" to="/security" onClick={scrollToTop}>Security</Link>
        </li>
        <li>

@@ -29,7 +29,7 @@ const Blog = () => {
           </li>
           <li>
             <Link className="link" to="/newsletterandevents" onClick={handleMilestoneClick}>
-              News Letter & Events
+              Newsletter & Events
             </Link>
           </li>
           <li>

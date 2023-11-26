@@ -74,15 +74,15 @@ const Footer = () => {
   <FooterLinkItems>
 
   <FooterLinkTitle>API</FooterLinkTitle>
-       <FooterLink to="/apioverview">Overview</FooterLink>
+       <FooterLink to="/apioverview" onClick={() => scrollToTopRef()}>Overview</FooterLink>
        <FooterLink to="/"><Methods/></FooterLink>
               <FooterLink to="/privacyPolicy" onClick={() => scrollToTopRef()}>Privacy Policy</FooterLink>
        <FooterLink to="/cookiepolicy" onClick={() => scrollToTopRef()}>Cookie Policy</FooterLink>
        <FooterLink to="/status">Status</FooterLink>
        <FooterLink to="/faqs" onClick={() => scrollToTopRef()}>FAQ's</FooterLink>
        <FooterLink to="/transparency" onClick={() => scrollToTopRef()}>Transparency Disclosure</FooterLink>
-       <FooterLink to="/codeofconduct">Code of conduct</FooterLink>
-       <FooterLink to="/customercare">Customer Care</FooterLink>
+       <FooterLink to="/codeofconduct" onClick={() => scrollToTopRef()}>Code of conduct</FooterLink>
+       <FooterLink to="/customercare" onClick={() => scrollToTopRef()}>Customer Care</FooterLink>
        {/* <FooterLink to="/">Log in</FooterLink> */}
             </FooterLinkItems>
   <FooterLinkItems>

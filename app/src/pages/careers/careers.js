@@ -33,6 +33,9 @@ const About2 = () => {
           transition: "height 0.3s ease-out, padding 0.3s ease-out",
         }}>
             <li>
+                <Link className="link" to="/jobopenings">Job Openings</Link>
+            </li>
+            <li>
                 <Link className="link" to="/administration">Administration</Link>
             </li>
             <li>

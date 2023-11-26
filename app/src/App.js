@@ -52,6 +52,7 @@ import Content from './pages/features/content';
 //* RUTAS DEL FOOTER - SECCIÓN API*/
 
 import Methods from './pages/api/docs/methods';
+import Overwiew from './pages/api/overview';
 import QualityAssurance from './pages/api/docs/quality';
 import BusinessDevelopment from './pages/api/docs/business_development';
 import Security from './pages/api/docs/security';
@@ -59,9 +60,13 @@ import SeeAllServices from './pages/api/docs/see_all_services';
 import Services from './pages/api/docs/services';
 import Reliability from './pages/api/docs/reliability';
 import CookiePolicy from './pages/api/cookiePolicy';
+import CustomerCare from './pages/api/customerCare';
 import Faqs from './pages/api/faqs';
 import TransparencyDisclosure from './pages/api/transparencydisclosure';
 import PrivacyPolicy from './pages/api/privacyPolicy';
+import Status from './pages/api/status';
+import JobOpenings from './pages/careers/job_openings';
+import LegalAndEthicalFramework from './pages/api/docs/legalandethicalframework';
 
 //* RUTAS DEL FOOTER - Blog*/
 
@@ -137,6 +142,7 @@ import Integration from './pages/ecosystem/integration';
 import Workingprogress from './pages/workinprogress';
 
 import Index from './pages/blog/index';
+import CodeOfConduct from './pages/api/codeOfConduct';
 
 function App() {
 
@@ -186,7 +192,7 @@ function App() {
           <Route path="/resorcesgeneral" element={<Workingprogress />} />
           <Route path="/resourcesprojectm" element={<Workingprogress />} />
           <Route path="/resourcesbusiness" element={<Workingprogress />} />
-          <Route path="/apioverview" element={<Workingprogress />} />
+          <Route path="/apioverview" element={<Overwiew />} />
           <Route path="/termsandconditions" element={<Workingprogress />} />
           <Route path="/cookiepolicy" element={<CookiePolicy />} />
           <Route path="/blog" element={<Blog />} />
@@ -210,12 +216,13 @@ function App() {
           <Route path="/seeallservices" element={<SeeAllServices />} />
           <Route path="/services" element={<Services />} />
           <Route path="/reliability" element={<Reliability />} />
-          <Route path="/codeofconduct" element={<Workingprogress />} />
-          <Route path="/customercare" element={<Workingprogress />} />
+          <Route path="/codeofconduct" element={<CodeOfConduct />} />
+          <Route path="/customercare" element={<CustomerCare />} />
           <Route path="/status" element={<Workingprogress />} />
           <Route path="/faqs" element={<Faqs />} />
          <Route path="/transparency" element={<TransparencyDisclosure />} />
           <Route path="/privacypolicy" element={<PrivacyPolicy />} />
+          <Route path="/legalandethical" element={<LegalAndEthicalFramework />} />
           
           
 
@@ -253,6 +260,8 @@ function App() {
           {/* RUTAS DEL FOOTER - SECCIÓN CAREERS */}
 
           <Route path="/careers" element={<Careers />} />
+
+          <Route path="/jobopenings" element={<JobOpenings />} />
 
           <Route path="/administration" element={<Administration />} />
 

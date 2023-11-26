@@ -34,6 +34,9 @@ const Careers2 = () => {
         position: ' relative', left: '0px', bottom: '140px',
         }}>
             <li>
+                <Link className="link" to="/jobopenings">Job Openings</Link>
+            </li>
+            <li>
                 <Link className="link" to="/administration">Administration</Link>
             </li>
             <li>
